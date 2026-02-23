@@ -3,6 +3,13 @@ import { GalleryBookComponent } from '../../shared/components/gallery-book/galle
 import { CompanyServicesComponent } from '../../shared/components/company-services/company-services.component';
 import { BestSellingItemsComponent } from '../../shared/components/best-selling-items/best-selling-items.component';
 import { LimitedOfferComponent } from '../../shared/components/limited-offer/limited-offer.component';
+import { ProductSectionComponent} from '../../shared/components/product-section/product-section.component';
+import { CategoriesSectionComponent } from '../../shared/components/categories-section/categories-section.component';
+import { CustomerReviewsSliderComponent } from '../../shared/components/customer-reviews-slider/customer-reviews-slider.component';
+import { LatestPostsComponent } from '../../shared/components/latest-posts/latest-posts.component';
+import { InstagramGalleryComponent } from '../../shared/components/instagram-gallery/instagram-gallery.component';
+
+
 
 @Component({
   standalone: true,
@@ -11,7 +18,12 @@ import { LimitedOfferComponent } from '../../shared/components/limited-offer/lim
     GalleryBookComponent,
     CompanyServicesComponent,
     BestSellingItemsComponent,
-    LimitedOfferComponent
+    LimitedOfferComponent,
+    ProductSectionComponent,
+    CategoriesSectionComponent,
+    CustomerReviewsSliderComponent,
+    LatestPostsComponent,
+    InstagramGalleryComponent
     // các section khác sẽ import sau
   ],
   templateUrl: './home.page.html',

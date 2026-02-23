@@ -1,0 +1,30 @@
+<div class="mini-card">
+
+  <img
+    [src]="image"
+    [alt]="title"
+    (click)="navigate()"
+  />
+
+  <div class="content">
+
+    <h4 (click)="navigate()">{{ title }}</h4>
+
+    <p class="author">{{ author }}</p>
+
+    <div class="rating">
+      ⭐ {{ rating }}
+    </div>
+
+    <div class="price">
+      <span *ngIf="originalPrice" class="original">
+        ${{ originalPrice }}
+      </span>
+      <span class="sale">
+        ${{ price }}
+      </span>
+    </div>
+
+  </div>
+
+</div>

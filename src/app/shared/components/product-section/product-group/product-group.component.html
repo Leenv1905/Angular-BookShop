@@ -1,0 +1,21 @@
+<div class="group">
+
+  <h3>{{ title }}</h3>
+
+  <ng-container *ngFor="let p of products; let last = last">
+
+    <app-mini-product-card
+      [id]="p.id"
+      [image]="p.image"
+      [title]="p.title"
+      [author]="p.author"
+      [rating]="p.rating"
+      [price]="p.price"
+      [originalPrice]="p.originalPrice"
+    />
+
+    <hr *ngIf="!last" />
+
+  </ng-container>
+
+</div>
