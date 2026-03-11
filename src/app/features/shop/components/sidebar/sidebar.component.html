@@ -1,0 +1,70 @@
+<div class="sidebar">
+
+  <!-- CATEGORY -->
+
+  <div class="filter-group">
+
+    <h4>Category</h4>
+
+    <ul>
+
+      <li
+        *ngFor="let category of categories"
+        (click)="selectCategory(category)"
+        [class.active]="shopService.filters().category === category"
+      >
+        {{ category }}
+      </li>
+
+    </ul>
+
+  </div>
+
+  <!-- LANGUAGE -->
+
+  <div class="filter-group">
+
+    <h4>Language</h4>
+
+    <ul>
+
+      <li
+        *ngFor="let lang of languages"
+        (click)="selectLanguage(lang)"
+        [class.active]="shopService.filters().language === (lang)"
+      >
+        {{ lang }}
+      </li>
+
+    </ul>
+
+  </div>
+
+  <!-- PRICE -->
+
+  <div class="filter-group">
+
+    <h4>Price</h4>
+
+    <ul>
+
+      <li
+        *ngFor="let price of priceRanges"
+        (click)="selectPrice(price.value)"
+        [class.active]="shopService.filters().priceRange === price.value"
+      >
+        {{ price.label }}
+      </li>
+
+    </ul>
+
+  </div>
+
+  <div class="clear-filter">
+
+    <button (click)="clearFilters()">
+      Clear Filters
+    </button>
+
+  </div>
+</div>

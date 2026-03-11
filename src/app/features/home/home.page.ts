@@ -9,8 +9,6 @@ import { CustomerReviewsSliderComponent } from '../../shared/components/customer
 import { LatestPostsComponent } from '../../shared/components/latest-posts/latest-posts.component';
 import { InstagramGalleryComponent } from '../../shared/components/instagram-gallery/instagram-gallery.component';
 
-
-
 @Component({
   standalone: true,
   selector: 'app-home-page',

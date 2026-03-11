@@ -24,7 +24,8 @@ export const routes: Routes = [
     component: MainLayoutComponent,
     children: [
       { path: '', loadComponent: () => import('./features/books/pages/book-list.page') .then(m => m.BookListPage) },
-      { path: 'home', loadComponent: () => import('./features/home/home.page') .then(m => m.HomePage) }
+      { path: 'home', loadComponent: () => import('./features/home/home.page') .then(m => m.HomePage) },
+      { path: 'shop', loadComponent: () => import('./features/shop/pages/shop.page') .then(m => m.ShopPage)}
 
     ]
   },

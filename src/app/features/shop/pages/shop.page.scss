@@ -1,0 +1,38 @@
+
+.shop-container {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* Sidebar */
+
+.sidebar {
+  //position: sticky;
+  //top: 120px;
+  //height: fit-content;
+  width: 260px;
+}
+
+/* Content */
+
+.shop-content {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+
+  .shop-container {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .sidebar {
+    order: 2;
+  }
+
+}
