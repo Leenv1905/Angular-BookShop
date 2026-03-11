@@ -5,6 +5,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  //rows đang phụ thuộc vào pages size trong service
   gap: 20px;
 }
 

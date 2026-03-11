@@ -42,7 +42,7 @@ export class ShopService {
 
   pagination = signal<PaginationState>({
     page: 1,
-    pageSize: 8
+    pageSize: 12
   });
 
   // ===== FILTER LOGIC =====

@@ -11,11 +11,26 @@
 /* Sidebar */
 
 .sidebar {
-  //position: sticky;
-  //top: 120px;
-  //height: fit-content;
+  position: sticky;
+  top: 120px;
+  height: fit-content;
+  // Đoạn này để sidebar luôn hiển thị khi cuộn trang,
+  // và có khoảng cách 120px từ top của viewport.
+  // Chiều cao sẽ tự động điều chỉnh theo nội dung bên trong.
   width: 260px;
 }
+//.sidebar{
+//  max-height: calc(100vh - 140px);
+//  overflow-y: auto;
+//}
+//Khi filter nhiều Category
+//Language
+//Price
+//Author
+//Publisher
+//Year
+//Rating
+//Thì sidebar sẽ tự scroll, còn content sẽ cố định, không bị ảnh hưởng bởi scroll của sidebar
 
 /* Content */
 
@@ -33,6 +48,7 @@
 
   .sidebar {
     order: 2;
+    position: static;
   }
 
 }
